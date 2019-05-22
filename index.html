@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='./js/angular.min.js'></script>
+    <script src="http://thienhung1989.github.io/angular-tree-dnd/dist/ng-tree-dnd.js"></script>
+    <link href="http://thienhung1989.github.io/angular-tree-dnd/dist/ng-tree-dnd.min.css" rel="stylesheet" />
+    <script src='./js/app.js'></script>
+</head>
+<body ng-app="appModule">
+
+    <div ng-controller="treeController">
+        <h1>Listagem de Capítulos</h1>
+        <tree-dnd tree-class="table table-bordered table-hover table-striped"
+            tree-data="dadosTreeGrid"
+            tree-control="my_tree"
+            column-defs="col_defs"
+            expand-on="expanding_property"
+            icon-expand="fa fa-plus">
+        </tree-dnd>
+    </div>
+  </body>
+</html>
